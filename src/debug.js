@@ -1,6 +1,7 @@
 /* eslint-disable no-param-reassign */
 const clearArr = (arr) => {
-  arr = [];
+  for (i = 0; i < arr; i++)
+    arr.pop();
   return arr
 };
 

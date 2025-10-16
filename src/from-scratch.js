@@ -1,5 +1,5 @@
 const addToFrontOrBack = (arr, value, isFront) => {
-  if (isFront = true) {
+  if (isFront = true && value < arr[0]) {
     arr.unshift(value)
   } else {
     arr.push(value)
@@ -10,8 +10,8 @@ const addToFrontOrBack = (arr, value, isFront) => {
 const reverseString = (string) => {
   if (typeof string === 'string') {
     let arr = string.split('')
-    let reverse = arr.reverse
-    let come = reverse.join
+    let reverse = arr.reverse()
+    let come = reverse.join("")
     return come
   } else {
     return 'not a string'
@@ -21,7 +21,8 @@ const reverseString = (string) => {
 const newArrayFullOf = (value, numOfValue) => {
   const arr = []
   for (i = 0; i < numOfValue; i++) {
-    return arr.push(value)
+    arr.push(value)
+    return arr
   }
 };
 
@@ -34,7 +35,6 @@ const insertIntoMiddle = (arr, value) => {
 const deleteFromMiddle = (arr) => {
   let middle = Math.floor(arr.length / 2)
   arr.splice(1, middle)
-  return arr
 };
 
 const isRightIndex = (arr, value, index) => {
@@ -47,7 +47,7 @@ const isRightIndex = (arr, value, index) => {
 
 const roundAllNumsDown = (arr) => {
   let newArr = []
-  for (i = 0; i < arr - 1; i++) {
+  for (i = 0; i < arr; i++) {
     let num = Math.floor(arr[i])
     newArr.push(num)
   }
@@ -58,7 +58,7 @@ const getAllYCoordinates = (arrOfCoords) => {
   let newArr = []
   for (i = 0; i < arrOfCoords.length; i++) {
     let into = arrOfCoords[i]
-    let add = into[i]
+    let add = into[1]
     newArr.push(add)
   }
   return newArr

@@ -1,9 +1,7 @@
 const uppercaseAll = (string) => {
+  let upper = string.toUpperCase()
   let arr = string.split(" ")
-  for (i = 0; i < arr.length; i++) {
-    arr[i].toUpperCase
-  };
-  return arr.join(" ")
+  return arr
 };
 
 const destructureCoordinates = (coordinates) => {
