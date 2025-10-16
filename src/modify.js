@@ -3,7 +3,7 @@ const uppercaseAll = (word1, word2, word3, ...theRest) => {
     word1.toUpperCase(),
     word2.toUpperCase(),
     word3.toUpperCase(),
-    theRest.toUpperCase()
+    ...theRest.map(word => word.toUpperCase())
   ];
 };
 
