@@ -1,8 +1,7 @@
 const uppercaseAll = (...theRest) => {
-  return [
-    theRest.toUpperCase()
-  ];
+  return theRest.map(word => word.toUpperCase());
 };
+
 
 const destructureCoordinates = (coordinates) => {
   const [x, y] = coordinates
