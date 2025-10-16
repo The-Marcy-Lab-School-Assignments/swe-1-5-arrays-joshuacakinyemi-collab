@@ -1,8 +1,5 @@
-const uppercaseAll = (word1, word2, word3, ...theRest) => {
+const uppercaseAll = (...theRest) => {
   return [
-    word1.toUpperCase(),
-    word2.toUpperCase(),
-    word3.toUpperCase(),
     theRest.toUpperCase()
   ];
 };
