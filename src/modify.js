@@ -1,5 +1,6 @@
 const uppercaseAll = (string) => {
-  let upper = string.toUpperCase()
+  let word = string.join(" ")
+  let upper = word.toUpperCase()
   let arr = upper.split(" ")
   return arr
 };
